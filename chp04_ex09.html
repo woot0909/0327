@@ -20,7 +20,14 @@
             </tr>
             <tr>
                 <th><label for="email">이메일 </label></th>
-                <td><input type="text" id="email"><label for="email2">@</label><input type="text" id="email2"></td>
+                <td><input type="text" id="email"><label for="email2">@</label>
+                    <select name="email2" id="email2" required>
+                    <option value="" disabled selected></option>
+                    <option>gmail.com</option>
+                    <option>naver.com</option>
+                    <option>daum.net</option></select>
+                    
+                </td>
             </tr>
             <tr>
                 <th><label for="phone">휴대폰</label></th>
@@ -47,6 +54,10 @@
         <tr>
             <th></th>
             <td><button type="submit">제출</button></td>
+        </tr>
+        <tr>
+            <th></th>
+            <td><button type="reset">취소</button></td>
         </tr>
         </table>    
     </form>
